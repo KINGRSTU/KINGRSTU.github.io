@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    margin: 0%;
+    padding:0%;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(indah\ 1.jpeg);
+    background-size: 80vh;
+    background-repeat: round;
+}
+.greetings{
+    font-family: 'Teko', sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #783737;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1.10s ;
+}
+.greetings > span:nth-child(7){
+    animation-delay:  1.30s ;
+}
+.greetings > span:nth-child(8){
+    animation-delay: 1.50s;
+}
+.greetings > span:nth-child(9){
+    animation-delay: 1.70s;
+}
+.greetings > span:nth-child(10){
+    animation-delay: 1.90s;
+}
+.greetings > span:nth-child(11){
+    animation-delay: 1.100s;
+}
+
+.description{
+    background-color: #50131382;
+    font-family: 'Glass Antiqua', cursive;
+    color:#f2eaea;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 5px #0f0f0f, 0 0 50px #3f100d, 0 0 100px #39c6d6;
+}
+
+.button a{
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #6f0a0a;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    
+    .button a{
+        font-size: .5rem;
+    }
+}
